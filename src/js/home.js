@@ -5,6 +5,7 @@ const home = (() => {
   const other = document.querySelector('.other');
   section.classList.add('section');
   const map = document.querySelector('.map');
+  
   const image = () => {
     return `<img class='photo' src="https://i9.photo.2gis.com/images/branch/67/9429411758101449_fc9b.jpg">`    
   };
@@ -16,10 +17,10 @@ const home = (() => {
     map.classList.add('none');
     text.classList.remove('none');
     if (document.querySelector('.form') !== null) {
-    document.querySelector('.form').classList.add('none');
+      document.querySelector('.form').classList.add('none');
     }
     if (document.querySelector('.card') !== null) {
-    document.querySelector('.card').classList.add("none");
+      document.querySelector('.card').classList.add("none");
     }
     other.classList.remove('none');
   };  

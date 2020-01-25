@@ -8,6 +8,7 @@ const menu = (() => {
   const menu = document.createElement('div');
   menu.classList.add('card');
   row.appendChild(menu);
+  
   const menuList = () => {
     return (`<div class="col m3 s12">
       <div class="card">
@@ -139,13 +140,12 @@ const menu = (() => {
     map.classList.add('none');
     form.classList.remove('none');
     if (document.querySelector('.form') !== null) {
-        document.querySelector('.form').classList.add('none');
+      document.querySelector('.form').classList.add('none');
     }
     menu.innerHTML = menuList();
     menu.classList.remove('none');
   };
   return { render };
 })();
-
 
 export { menu }

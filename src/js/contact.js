@@ -7,7 +7,6 @@ const contact = (() => {
   const form = document.createElement('form');
   form.classList.add('form');
   row.appendChild(form);
-
   const formItems = () => {
     return (`<div class="row">
     <div class="input-field col s6">
