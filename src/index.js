@@ -1,12 +1,9 @@
-import { example } from './example';
 import { nav } from './js/nav.js';
 import { about } from './js/about.js';
 import { home } from './js/home.js';
 import { contact } from './js/contact.js';
 import { menu } from './js/menu.js';
 import './styles/main.scss';
-
-console.log(example('bro'))
 
 const navigation = nav();
 const body = document.querySelector('body');

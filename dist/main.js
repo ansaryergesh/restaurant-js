@@ -121,18 +121,6 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./src/example.js":
-/*!************************!*\
-  !*** ./src/example.js ***!
-  \************************/
-/*! exports provided: example */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"example\", function() { return example; });\nconst example = name => {\n  return `${name}, bro`;\n};\n\n\n\n//# sourceURL=webpack:///./src/example.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -141,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _example__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./example */ \"./src/example.js\");\n/* harmony import */ var _js_nav_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/nav.js */ \"./src/js/nav.js\");\n/* harmony import */ var _js_about_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/about.js */ \"./src/js/about.js\");\n/* harmony import */ var _js_home_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/home.js */ \"./src/js/home.js\");\n/* harmony import */ var _js_contact_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/contact.js */ \"./src/js/contact.js\");\n/* harmony import */ var _js_menu_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/menu.js */ \"./src/js/menu.js\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\nconsole.log(Object(_example__WEBPACK_IMPORTED_MODULE_0__[\"example\"])('bro'));\nconst navigation = Object(_js_nav_js__WEBPACK_IMPORTED_MODULE_1__[\"nav\"])();\nconst body = document.querySelector('body');\nconst navDiv = document.querySelector('.navbar-fixed');\nbody.appendChild(navDiv);\nnavDiv.appendChild(navigation);\n_js_home_js__WEBPACK_IMPORTED_MODULE_3__[\"home\"].render();\ndocument.querySelector('.home').addEventListener('click', () => {\n  _js_home_js__WEBPACK_IMPORTED_MODULE_3__[\"home\"].render();\n});\ndocument.querySelector('.about').addEventListener('click', () => {\n  _js_about_js__WEBPACK_IMPORTED_MODULE_2__[\"about\"].render();\n});\ndocument.querySelector('.contact').addEventListener('click', () => {\n  _js_contact_js__WEBPACK_IMPORTED_MODULE_4__[\"contact\"].render();\n});\ndocument.querySelector('.menu').addEventListener('click', () => {\n  _js_menu_js__WEBPACK_IMPORTED_MODULE_5__[\"menu\"].render();\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_nav_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/nav.js */ \"./src/js/nav.js\");\n/* harmony import */ var _js_about_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/about.js */ \"./src/js/about.js\");\n/* harmony import */ var _js_home_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/home.js */ \"./src/js/home.js\");\n/* harmony import */ var _js_contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/contact.js */ \"./src/js/contact.js\");\n/* harmony import */ var _js_menu_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/menu.js */ \"./src/js/menu.js\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\nconst navigation = Object(_js_nav_js__WEBPACK_IMPORTED_MODULE_0__[\"nav\"])();\nconst body = document.querySelector('body');\nconst navDiv = document.querySelector('.navbar-fixed');\nbody.appendChild(navDiv);\nnavDiv.appendChild(navigation);\n_js_home_js__WEBPACK_IMPORTED_MODULE_2__[\"home\"].render();\ndocument.querySelector('.home').addEventListener('click', () => {\n  _js_home_js__WEBPACK_IMPORTED_MODULE_2__[\"home\"].render();\n});\ndocument.querySelector('.about').addEventListener('click', () => {\n  _js_about_js__WEBPACK_IMPORTED_MODULE_1__[\"about\"].render();\n});\ndocument.querySelector('.contact').addEventListener('click', () => {\n  _js_contact_js__WEBPACK_IMPORTED_MODULE_3__[\"contact\"].render();\n});\ndocument.querySelector('.menu').addEventListener('click', () => {\n  _js_menu_js__WEBPACK_IMPORTED_MODULE_4__[\"menu\"].render();\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
