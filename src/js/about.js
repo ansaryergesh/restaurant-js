@@ -15,14 +15,12 @@ const about = (() => {
     map.classList.remove('none');
     text.classList.remove('none');
     if (document.querySelector('.form') !== null) {
-      document.querySelector('.form').classList.add("none");
+      document.querySelector('.form').classList.add('none');
     }
     if (document.querySelector('.card') !== null) {
-      document.querySelector('.card').classList.add("none");
+      document.querySelector('.card').classList.add('none');
     }
   };
-      
   return { render };
 })();
-
-export { about }
+export { about };
