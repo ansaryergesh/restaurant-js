@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"body {\\n  background-color: red; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"nav {\\n  background-color: #5d52bb;\\n  color: white; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -141,7 +141,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _example__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./example */ \"./src/example.js\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconsole.log(Object(_example__WEBPACK_IMPORTED_MODULE_0__[\"example\"])('bro'));\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _example__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./example */ \"./src/example.js\");\n/* harmony import */ var _js_nav_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/nav.js */ \"./src/js/nav.js\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconsole.log(Object(_example__WEBPACK_IMPORTED_MODULE_0__[\"example\"])('bro'));\nconst navigation = Object(_js_nav_js__WEBPACK_IMPORTED_MODULE_1__[\"nav\"])();\nconst body = document.querySelector('body');\nbody.appendChild(document.createElement('div'));\nconst navList = document.querySelector('div');\nnavList.appendChild(navigation);\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/nav.js":
+/*!***********************!*\
+  !*** ./src/js/nav.js ***!
+  \***********************/
+/*! exports provided: nav */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"nav\", function() { return nav; });\nconst nav = () => {\n  const nav = document.createElement('nav');\n\n  const navLists = () => {\n    return `<div class=\"nav-wrapper\">\n        <a href=\"#\" class=\"brand-logo\">Restaurant Menu</a>\n        <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n          <li><a href=\"#\">Home</a></li>\n          <li><a href=\"#\">Menu</a></li>\n          <li><a href=\"#\">About</a></li>\n          <li><a href=\"#\">Contact us</a></li>\n        </ul>\n      </div>`;\n  };\n\n  nav.innerHTML = navLists();\n  return nav;\n};\n\n//# sourceURL=webpack:///./src/js/nav.js?");
 
 /***/ }),
 
