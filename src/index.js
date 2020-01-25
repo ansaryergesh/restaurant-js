@@ -32,4 +32,3 @@ document.querySelector('.contact').addEventListener('click', () => {
 document.querySelector('.menu').addEventListener('click', () => {
     menu.render();
 })
-
