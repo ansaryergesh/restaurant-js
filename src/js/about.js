@@ -18,6 +18,9 @@ const about =(()=> {
         if (document.querySelector('.form') !== null) {
             document.querySelector('.form').classList.add("none");
         }
+        if (document.querySelector('.card') !== null) {
+            document.querySelector('.card').classList.add("none");
+        }
       };
     
       return { render };

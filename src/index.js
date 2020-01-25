@@ -3,6 +3,7 @@ import { nav } from './js/nav.js';
 import { about } from './js/about.js';
 import { home } from './js/home.js';
 import { contact } from './js/contact.js';
+import { menu } from './js/menu.js';
 import './styles/main.scss';
 
 console.log(example('bro'))
@@ -26,5 +27,9 @@ document.querySelector('.about').addEventListener('click', () => {
 
 document.querySelector('.contact').addEventListener('click', () => {
     contact.render();
+})
+
+document.querySelector('.menu').addEventListener('click', () => {
+    menu.render();
 })
 

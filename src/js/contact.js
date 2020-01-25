@@ -33,6 +33,9 @@ const contact =(()=> {
         map.classList.add('none');
         form.classList.remove('none');
         form.innerHTML = formItems();
+        if (document.querySelector('.card') !== null) {
+          document.querySelector('.card').classList.add("none");
+        }
       };
     
       return { render };

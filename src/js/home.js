@@ -14,12 +14,15 @@ const home =(()=> {
     other.innerHTML = image();
 
     const render = () => {
-        header.textContent = "Welcome to the Restaurn Page";
+        header.textContent = "Welcome to the Lounge Bar";
         text.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia numquam voluptates provident eius, illum totam pariatur voluptatem sit iste nulla quod labore tempore eos rem officia ad ex corrupti dolores!";  
         map.classList.add("none");
         text.classList.remove('none');
         if (document.querySelector('.form') !== null) {
             document.querySelector('.form').classList.add("none");
+        }
+        if (document.querySelector('.card') !== null) {
+            document.querySelector('.card').classList.add("none");
         }
         other.classList.remove('none');
       };
