@@ -22,7 +22,6 @@ const about =(()=> {
             document.querySelector('.card').classList.add("none");
         }
       };
-    
       return { render };
 
 })();
