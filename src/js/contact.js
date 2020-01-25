@@ -5,8 +5,9 @@ const contact = (() => {
   const other = document.querySelector('.other');
   const row = document.querySelector('.section');
   const form = document.createElement('form');
-  form.classList.add("form");
+  form.classList.add('form');
   row.appendChild(form);
+
   const formItems = () => {
     return (`<div class="row">
     <div class="input-field col s6">
@@ -22,11 +23,11 @@ const contact = (() => {
     <button class="btn waves-effect waves-light center" type="submit" name="action">Submit
         <i class="material-icons right">send</i>
     </button>
-    </div>`)
-  }
+    </div>`);
+  };
 
   const render = () => {
-    header.textContent = "Contact us";
+    header.textContent = 'Contact us';
     text.classList.add('none');
     other.classList.add('none');
     map.classList.add('none');
@@ -35,10 +36,9 @@ const contact = (() => {
     if (document.querySelector('.card') !== null) {
       document.querySelector('.card').classList.add("none");
     }
-    };
+  };
     
-    return { render };
-
+  return { render };
 })();
 
 
