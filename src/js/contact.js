@@ -25,7 +25,6 @@ const contact = (() => {
     </button>
     </div>`);
   };
-
   const render = () => {
     header.textContent = 'Contact us';
     text.classList.add('none');
@@ -34,12 +33,10 @@ const contact = (() => {
     form.classList.remove('none');
     form.innerHTML = formItems();
     if (document.querySelector('.card') !== null) {
-      document.querySelector('.card').classList.add("none");
+      document.querySelector('.card').classList.add('none');
     }
   };
-    
   return { render };
 })();
-
 
 export { contact }

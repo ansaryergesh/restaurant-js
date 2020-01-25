@@ -8,7 +8,6 @@ const menu = (() => {
   const menu = document.createElement('div');
   menu.classList.add('card');
   row.appendChild(menu);
-
   const menuList = () => {
     return (`<div class="col m3 s12">
       <div class="card">
@@ -145,9 +144,7 @@ const menu = (() => {
     menu.innerHTML = menuList();
     menu.classList.remove('none');
   };
-    
   return { render };
-
 })();
 
 

@@ -12,9 +12,7 @@ const nav = () => {
     </ul>
     </div>`);
   };
-
   nav.innerHTML = navLists();
-
   return nav;
 };
 
