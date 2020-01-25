@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"nav {\\n  background-color: #5d52bb;\\n  color: white; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"body {\\n  background: url(https://cdn.hipwallpaper.com/i/26/28/oFCSY3.jpg) no-repeat center center fixed;\\n  -webkit-background-size: cover;\\n  -moz-background-size: cover;\\n  -o-background-size: cover;\\n  background-size: cover;\\n  font-size: 20px; }\\n\\nnav {\\n  background-color: rgba(29, 81, 223, 0.418); }\\n\\n.navbar-fixed {\\n  top: 0;\\n  position: absolute; }\\n\\n.brand-logo {\\n  margin-left: 10px; }\\n\\n.row {\\n  margin-top: 100px; }\\n\\n.none {\\n  display: none; }\\n\\n.section {\\n  background-color: rgba(0, 0, 0, 0.5);\\n  color: white;\\n  padding: 30px; }\\n\\n.header {\\n  margin-bottom: 50px; }\\n  .header:hover {\\n    transform: skewY(1deg) skewX(5deg) scale(1.02);\\n    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);\\n    cursor: pointer; }\\n\\n.photo {\\n  margin-top: 30px;\\n  width: 500px;\\n  height: auto;\\n  -webkit-transition: .3s ease-in-out;\\n  transition: .3s ease-in-out; }\\n  .photo:hover {\\n    -webkit-transform: scale(1.15);\\n    transform: scale(1.15);\\n    cursor: pointer; }\\n\\n.map {\\n  margin-top: 50px;\\n  background-image: url(https://static-maps.yandex.ru/1.x/?ll=76.898,43.219&z=4&l=map&size=300,450&spn=0.005,0.005&pt=76.898,43.219,pm2ntm);\\n  padding: 200px; }\\n\\nform {\\n  color: white; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -141,7 +141,43 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _example__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./example */ \"./src/example.js\");\n/* harmony import */ var _js_nav_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/nav.js */ \"./src/js/nav.js\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconsole.log(Object(_example__WEBPACK_IMPORTED_MODULE_0__[\"example\"])('bro'));\nconst navigation = Object(_js_nav_js__WEBPACK_IMPORTED_MODULE_1__[\"nav\"])();\nconst body = document.querySelector('body');\nbody.appendChild(document.createElement('div'));\nconst navList = document.querySelector('div');\nnavList.appendChild(navigation);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _example__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./example */ \"./src/example.js\");\n/* harmony import */ var _js_nav_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/nav.js */ \"./src/js/nav.js\");\n/* harmony import */ var _js_about_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/about.js */ \"./src/js/about.js\");\n/* harmony import */ var _js_home_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/home.js */ \"./src/js/home.js\");\n/* harmony import */ var _js_contact_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/contact.js */ \"./src/js/contact.js\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\nconsole.log(Object(_example__WEBPACK_IMPORTED_MODULE_0__[\"example\"])('bro'));\nconst navigation = Object(_js_nav_js__WEBPACK_IMPORTED_MODULE_1__[\"nav\"])();\nconst body = document.querySelector('body');\nconst navDiv = document.querySelector('.navbar-fixed');\nbody.appendChild(navDiv);\nnavDiv.appendChild(navigation);\n_js_home_js__WEBPACK_IMPORTED_MODULE_3__[\"home\"].render();\ndocument.querySelector('.home').addEventListener('click', () => {\n  _js_home_js__WEBPACK_IMPORTED_MODULE_3__[\"home\"].render();\n});\ndocument.querySelector('.about').addEventListener('click', () => {\n  _js_about_js__WEBPACK_IMPORTED_MODULE_2__[\"about\"].render();\n});\ndocument.querySelector('.contact').addEventListener('click', () => {\n  _js_contact_js__WEBPACK_IMPORTED_MODULE_4__[\"contact\"].render();\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/about.js":
+/*!*************************!*\
+  !*** ./src/js/about.js ***!
+  \*************************/
+/*! exports provided: about */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"about\", function() { return about; });\nconst about = (() => {\n  const section = document.querySelector('section');\n  const header = document.querySelector('.header');\n  const text = document.querySelector('.text');\n  const map = document.createElement('section');\n  map.classList.add('map');\n  const other = document.querySelector('.other');\n  section.appendChild(map);\n  section.classList.add('section');\n  const row = document.querySelector('.row');\n\n  const render = () => {\n    header.textContent = \"About us\";\n    text.textContent = \"Pub, Mint Lounge bar on Gagarin Ave. European, Eastern cuisine. Average account per person 6000-10000 tenge. Below you can see the location of Lounge Bar:\";\n    other.classList.add('none');\n    map.classList.remove('none');\n    text.classList.remove('none');\n\n    if (document.querySelector('.form') !== null) {\n      document.querySelector('.form').classList.add(\"none\");\n    }\n  };\n\n  return {\n    render\n  };\n})();\n\n\n\n//# sourceURL=webpack:///./src/js/about.js?");
+
+/***/ }),
+
+/***/ "./src/js/contact.js":
+/*!***************************!*\
+  !*** ./src/js/contact.js ***!
+  \***************************/
+/*! exports provided: contact */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"contact\", function() { return contact; });\nconst contact = (() => {\n  const header = document.querySelector('.header');\n  const text = document.querySelector('.text');\n  const map = document.querySelector('.map');\n  const other = document.querySelector('.other');\n  const row = document.querySelector('.section');\n  const form = document.createElement('form');\n  form.classList.add(\"form\");\n  row.appendChild(form);\n\n  const formItems = () => {\n    return `<div class=\"row\">\n        <div class=\"input-field col s6\">\n          <i class=\"material-icons prefix\">account_circle</i>\n          <input id=\"icon_prefix\" type=\"text\" class=\"validate\">\n          <label for=\"icon_prefix\">First Name</label>\n        </div>\n        <div class=\"input-field col s6\">\n          <i class=\"material-icons prefix\">mode_edit</i>\n          <textarea id=\"icon_prefix2\" class=\"materialize-textarea\"></textarea>\n          <label for=\"icon_prefix2\">Message</label>\n        </div>\n        <button class=\"btn waves-effect waves-light center\" type=\"submit\" name=\"action\">Submit\n            <i class=\"material-icons right\">send</i>\n        </button>\n \n      </div>`;\n  };\n\n  const render = () => {\n    header.textContent = \"Contact us\";\n    text.classList.add('none');\n    other.classList.add('none');\n    map.classList.add('none');\n    form.classList.remove('none');\n    form.innerHTML = formItems();\n  };\n\n  return {\n    render\n  };\n})();\n\n\n\n//# sourceURL=webpack:///./src/js/contact.js?");
+
+/***/ }),
+
+/***/ "./src/js/home.js":
+/*!************************!*\
+  !*** ./src/js/home.js ***!
+  \************************/
+/*! exports provided: home */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"home\", function() { return home; });\nconst home = (() => {\n  const section = document.querySelector('section');\n  const header = document.querySelector('.header');\n  const text = document.querySelector('.text');\n  const other = document.querySelector('.other');\n  section.classList.add('section');\n  const row = document.querySelector('.row');\n  const map = document.querySelector('.map');\n\n  const image = () => {\n    return ` <img class=\"photo\" src=\"https://i9.photo.2gis.com/images/branch/67/9429411758101449_fc9b.jpg\">`;\n  };\n\n  other.innerHTML = image();\n\n  const render = () => {\n    header.textContent = \"Welcome to the Restaurn Page\";\n    text.textContent = \"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia numquam voluptates provident eius, illum totam pariatur voluptatem sit iste nulla quod labore tempore eos rem officia ad ex corrupti dolores!\";\n    map.classList.add(\"none\");\n    text.classList.remove('none');\n\n    if (document.querySelector('.form') !== null) {\n      document.querySelector('.form').classList.add(\"none\");\n    }\n\n    other.classList.remove('none');\n  };\n\n  return {\n    render\n  };\n})();\n\n\n\n//# sourceURL=webpack:///./src/js/home.js?");
 
 /***/ }),
 
@@ -153,7 +189,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _exa
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"nav\", function() { return nav; });\nconst nav = () => {\n  const nav = document.createElement('nav');\n\n  const navLists = () => {\n    return `<div class=\"nav-wrapper\">\n        <a href=\"#\" class=\"brand-logo\">Restaurant Menu</a>\n        <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n          <li><a href=\"#\">Home</a></li>\n          <li><a href=\"#\">Menu</a></li>\n          <li><a href=\"#\">About</a></li>\n          <li><a href=\"#\">Contact us</a></li>\n        </ul>\n      </div>`;\n  };\n\n  nav.innerHTML = navLists();\n  return nav;\n};\n\n//# sourceURL=webpack:///./src/js/nav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"nav\", function() { return nav; });\nconst nav = () => {\n  const nav = document.createElement('nav');\n\n  const navLists = () => {\n    return `<div class=\"nav-wrapper\">\n        <a href=\"#\" class=\"brand-logo\">Restaurant Menu</a>\n        <a href=\"#\" data-target=\"mobile-demo\" class=\"sidenav-trigger\"><i class=\"material-icons\">menu</i></a>\n        <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\n          <li><a class=\"home\">Home</a></li>\n          <li><a class=\"menu\">Menu</a></li>\n          <li><a class=\"about\">About</a></li>\n          <li><a class=\"contact\">Contact us</a></li>\n        </ul>\n      </div>`;\n  };\n\n  nav.innerHTML = navLists();\n  return nav;\n};\n\n//# sourceURL=webpack:///./src/js/nav.js?");
 
 /***/ }),
 

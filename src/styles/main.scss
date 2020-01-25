@@ -1,4 +1,66 @@
+body {
+    background: url(https://cdn.hipwallpaper.com/i/26/28/oFCSY3.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 20px;
+}
+
 nav {
-    background-color: rgb(93, 82, 187);
+    background-color: rgba(29, 81, 223, 0.418);
+}
+
+.navbar-fixed {
+    top:0;
+    position: absolute;
+}
+
+.brand-logo{
+    margin-left:10px;
+}
+
+.row {
+    margin-top: 100px;
+}
+
+.none {
+    display: none;
+}
+.section {
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    padding: 30px;
+}
+
+.header {
+    margin-bottom: 50px;
+    &:hover {
+    transform: skewY(1deg) skewX(5deg) scale(1.02);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    }
+}
+
+.photo {
+    margin-top:30px;
+    width: 500px;
+	height: auto;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    
+    &:hover {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        cursor: pointer;
+    }
+}
+
+.map {
+    margin-top: 50px;
+    background-image: url(https://static-maps.yandex.ru/1.x/?ll=76.898,43.219&z=4&l=map&size=300,450&spn=0.005,0.005&pt=76.898,43.219,pm2ntm);
+    padding: 200px;
+}
+form {
     color:white;
 }
