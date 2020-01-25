@@ -1,8 +1,8 @@
-import { nav } from './js/nav.js';
-import { about } from './js/about.js';
-import { home } from './js/home.js';
-import { contact } from './js/contact.js';
-import { menu } from './js/menu.js';
+import { nav } from './js/nav';
+import { about } from './js/about';
+import { home } from './js/home';
+import { contact } from './js/contact';
+import { menu } from './js/menu';
 import './styles/main.scss';
 
 const navigation = nav();
@@ -15,17 +15,17 @@ home.render();
 
 
 document.querySelector('.home').addEventListener('click', () => {
-    home.render();
-})
+  home.render();
+});
 
 document.querySelector('.about').addEventListener('click', () => {
-    about.render();
-})
+  about.render();
+});
 
 document.querySelector('.contact').addEventListener('click', () => {
-    contact.render();
-})
+  contact.render();
+});
 
 document.querySelector('.menu').addEventListener('click', () => {
-    menu.render();
-})
+  menu.render();
+});
