@@ -7,23 +7,23 @@ const contact = (() => {
   const form = document.createElement('form');
   form.classList.add('form');
   row.appendChild(form);
-  
+
   const formItems = () => {
     return (`<div class="row">
-    <div class="input-field col s6">
-      <i class="material-icons prefix">account_circle</i>
-      <input id="icon_prefix" type="text" class="validate">
-      <label for="icon_prefix">First Name</label>
-    </div>
-    <div class="input-field col s6">
-      <i class="material-icons prefix">mode_edit</i>
-      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-      <label for="icon_prefix2">Message</label>
-    </div>
-    <button class="btn waves-effect waves-light center" type="submit" name="action">Submit
-        <i class="material-icons right">send</i>
-    </button>
-    </div>`);
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" class="validate">
+        <label for="icon_prefix">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">mode_edit</i>
+        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+        <label for="icon_prefix2">Message</label>
+      </div>
+      <button class="btn waves-effect waves-light center" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+      </button>
+      </div>`);
   };
   const render = () => {
     header.textContent = 'Contact us';

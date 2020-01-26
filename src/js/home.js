@@ -19,11 +19,12 @@ const home = (() => {
       document.querySelector('.form').classList.add('none');
     }
     if (document.querySelector('.card') !== null) {
-      document.querySelector('.card').classList.add("none");
+      document.querySelector('.card').classList.add('none');
     }
     other.classList.remove('none');
-  };  
+  };
+    
   return { render };
 })();
 
-export { home }
+export { home };
