@@ -140,12 +140,13 @@ const menu = (() => {
     map.classList.add('none');
     form.classList.remove('none');
     if (document.querySelector('.form') !== null) {
-      document.querySelector('.form').classList.add('none');
+        document.querySelector('.form').classList.add('none');
     }
     menu.innerHTML = menuList();
     menu.classList.remove('none');
   };
   return { render };
 })();
+
 
 export { menu }
