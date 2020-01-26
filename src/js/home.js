@@ -5,8 +5,9 @@ const home = (() => {
   const other = document.querySelector('.other');
   section.classList.add('section');
   const map = document.querySelector('.map');
-  const image = () => {
-    return `<img class='photo' src="https://i9.photo.2gis.com/images/branch/67/9429411758101449_fc9b.jpg">`    
+  const image = () => 
+  {
+    return `<img class='photo' src='https://i9.photo.2gis.com/images/branch/67/9429411758101449_fc9b.jpg'>`    
   };
   other.innerHTML = image();
 
