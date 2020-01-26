@@ -144,7 +144,6 @@ const menu = (() => {
     menu.innerHTML = menuList();
     menu.classList.remove('none');
   };
-    
   return { render };
 })();
 
